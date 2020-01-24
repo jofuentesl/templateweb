@@ -1,0 +1,32 @@
+{
+  "name": "reproweb",
+  "version": "1.0.0",
+  "description": "Web corporativa Repro Disseny",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parcel:dev": "parcel index.html",
+    "parcel:build": "parcel build index.html",
+    "clean": "rimraf dist .cache .cache-loader"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jofuentesl/reprodisseny.git"
+  },
+  "keywords": [
+    "web",
+    "corporativa"
+  ],
+  "author": "Jordi Fuentes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jofuentesl/reprodisseny/issues"
+  },
+  "homepage": "https://github.com/jofuentesl/reprodisseny#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.0"
+  }
+}
